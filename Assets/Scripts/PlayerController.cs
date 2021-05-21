@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        sources = GetComponents<AudioSource>();
+       // sources = GetComponents<AudioSource>();
     }
 
     void FixedUpdate() 
@@ -40,11 +40,11 @@ public class PlayerController : MonoBehaviour
         Vector2 movementVector = movementValue.Get<Vector2>();
         movementX = movementVector.x; 
         movementY = movementVector.y;
-        sources[0].Play();
+       // sources[0].Play();
     }
 
-    void OnCollisionEnter (Collision collision)
+  /*  void OnCollisionEnter (Collision collision)
     {
         sources[1].Play();
-    }
+    }*/
 }
